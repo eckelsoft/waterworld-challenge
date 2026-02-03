@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "waterworldchallenge",
+  "version": "${version}",
+
+  "name": "WaterWorldChallenge",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/waterworldchallenge/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": ["org.eckelsoft.waterworldchallenge.client.WaterworldchallengeClient"],
+    "main": ["org.eckelsoft.waterworldchallenge.Waterworldchallenge"]
+  },
+
+  "mixins": [
+    "waterworldchallenge.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
